@@ -315,8 +315,12 @@ body::before,body::after{
  background:url('assets/laurel-daylight-shadow.png') left center/100% 100% no-repeat;
  mix-blend-mode:multiply;transform-origin:10% 20%;will-change:transform;
 }
-body::before{left:-70px;opacity:.47;animation:laurel-breeze-left 10s ease-in-out infinite alternate}
-body::after{right:-130px;opacity:.27;transform-origin:88% 18%;animation:laurel-breeze-right 12s ease-in-out infinite alternate}
+body::before{left:-70px;opacity:.47;animation:laurel-breeze-left 10s ease-in-out infinite alternate;
+ -webkit-mask-image:radial-gradient(ellipse 95% 47% at 5% 50%,#000 10%,rgba(0,0,0,.85) 45%,transparent 100%);
+ mask-image:radial-gradient(ellipse 95% 47% at 5% 50%,#000 10%,rgba(0,0,0,.85) 45%,transparent 100%)}
+body::after{right:-130px;opacity:.27;transform-origin:88% 18%;animation:laurel-breeze-right 12s ease-in-out infinite alternate;
+ -webkit-mask-image:radial-gradient(ellipse 95% 47% at 95% 50%,#000 10%,rgba(0,0,0,.85) 45%,transparent 100%);
+ mask-image:radial-gradient(ellipse 95% 47% at 95% 50%,#000 10%,rgba(0,0,0,.85) 45%,transparent 100%)}
 @keyframes laurel-breeze-left{
  0%{transform:translate3d(-20px,-8px,0) rotate(-2.3deg)}
  50%{transform:translate3d(14px,10px,0) rotate(1.6deg)}
