@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 4000" preserveAspectRatio="none" aria-hidden="true">
+  <defs>
+    <filter id="sunlight" x="-30%" y="-10%" width="160%" height="120%"><feGaussianBlur stdDeviation="12"/></filter>
+    <path id="leaf" d="M0 0 C19 -34 54 -47 85 -42 C71 -13 41 7 0 0Z"/>
+    <g id="sprig">
+      <path d="M0 225 C34 151 24 67 70 0" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      <use href="#leaf" transform="translate(12 192) rotate(-126) scale(1.10)"/>
+      <use href="#leaf" transform="translate(18 164) rotate(-24) scale(1.15)"/>
+      <use href="#leaf" transform="translate(24 119) rotate(-139) scale(.92)"/>
+      <use href="#leaf" transform="translate(36 94) rotate(-18) scale(.94)"/>
+      <use href="#leaf" transform="translate(47 57) rotate(-147) scale(.78)"/>
+      <use href="#leaf" transform="translate(64 23) rotate(-30) scale(.77)"/>
+    </g>
+  </defs>
+  <g fill="#20271d" color="#20271d" opacity=".56" filter="url(#sunlight)">
+    <!-- Two unbroken, branching silhouettes, not isolated per-section ornaments. -->
+    <path d="M-70 -110 C120 310 -35 620 94 1030 S6 1740 111 2100 S-10 2800 97 3150 S48 3770 125 4140" fill="none" stroke="currentColor" stroke-width="20"/>
+    <path d="M1510 -140 C1272 325 1478 714 1344 1090 S1469 1810 1315 2190 S1464 2900 1347 3290 S1415 3820 1297 4140" fill="none" stroke="currentColor" stroke-width="18"/>
+    <g transform="translate(-6 90) rotate(24) scale(2.8)"><use href="#sprig"/></g>
+    <g transform="translate(102 675) rotate(-28) scale(2.35)"><use href="#sprig"/></g>
+    <g transform="translate(-40 1180) rotate(18) scale(3.1)"><use href="#sprig"/></g>
+    <g transform="translate(96 1885) rotate(-32) scale(2.7)"><use href="#sprig"/></g>
+    <g transform="translate(-12 2540) rotate(23) scale(2.65)"><use href="#sprig"/></g>
+    <g transform="translate(106 3250) rotate(-29) scale(2.8)"><use href="#sprig"/></g>
+    <g transform="translate(1453 15) rotate(162) scale(2.7)"><use href="#sprig"/></g>
+    <g transform="translate(1312 650) rotate(206) scale(2.9)"><use href="#sprig"/></g>
+    <g transform="translate(1455 1310) rotate(155) scale(2.65)"><use href="#sprig"/></g>
+    <g transform="translate(1309 1995) rotate(211) scale(2.9)"><use href="#sprig"/></g>
+    <g transform="translate(1445 2665) rotate(159) scale(2.8)"><use href="#sprig"/></g>
+    <g transform="translate(1325 3330) rotate(205) scale(2.9)"><use href="#sprig"/></g>
+  </g>
+</svg>
