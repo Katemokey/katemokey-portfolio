@@ -322,12 +322,12 @@ a:focus-visible,button:focus-visible{outline:3px solid #c9ac78;outline-offset:5p
 }
 .leaf-shadows::before{
  left:-6vw;opacity:.31;transform-origin:10% 20%;
- background:url('assets/laurel-daylight-shadow.png') left center/auto 100% no-repeat;
+ background:url('assets/laurel-daylight-shadow.webp') left center/auto 100% no-repeat;
  animation:laurel-breeze-left 10s ease-in-out infinite alternate;
 }
 .leaf-shadows::after{
  right:-7vw;opacity:.25;transform-origin:88% 80%;
- background:url('assets/laurel-right-corner-full.png') right center/auto 100% no-repeat;
+ background:url('assets/laurel-right-corner-full.webp') right center/auto 100% no-repeat;
  animation:laurel-breeze-right 12s ease-in-out infinite alternate;
 }
 @keyframes laurel-breeze-left{
