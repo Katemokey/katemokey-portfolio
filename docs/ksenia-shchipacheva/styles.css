@@ -355,6 +355,15 @@ body::after{top:43%;right:-130px;opacity:.27;transform-origin:88% 18%;animation:
  body::after{display:block;top:46%;right:-55px;width:300px;height:78svh;opacity:.23}
  .laurel-corner{right:-48px;bottom:3%;width:clamp(280px,78vw,365px);height:clamp(410px,59svh,540px);opacity:.37}
 }
+/* A section-local botanical shadow keeps foliage visible after the hero on phones. */
+@media(max-width:820px){
+ #about.about-portrait{position:relative;isolation:isolate;overflow:hidden}
+ #about.about-portrait::before{content:"";position:absolute;z-index:0;top:4%;left:-95px;width:clamp(300px,72vw,450px);height:clamp(480px,72svh,680px);pointer-events:none;
+  background:url('assets/laurel-daylight-shadow.png') center/100% 100% no-repeat;opacity:.27;mix-blend-mode:multiply;
+  -webkit-mask-image:radial-gradient(ellipse 75% 45% at 35% 50%,#000 12%,rgba(0,0,0,.8) 44%,transparent 100%);
+  mask-image:radial-gradient(ellipse 75% 45% at 35% 50%,#000 12%,rgba(0,0,0,.8) 44%,transparent 100%)}
+ #about.about-portrait>.wrap{position:relative;z-index:1}
+}
 @media(prefers-reduced-motion:reduce){
  body::before,body::after,.laurel-corner{animation:none;will-change:auto}
  body::after{transform:scaleX(-1)}
